@@ -1,0 +1,47 @@
+.btn-pill {
+  padding: 10px 22px;
+  text-decoration: none;
+  background-color: #b3e5fc;
+  color: black;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 22px;
+  outline: 0;
+  border: none;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  border-radius: 3em;
+}
+
+#landing_header {
+  margin-top: 42px;
+}
+
+.white-tint {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.page-footer {
+  background-color: #b3e5fc;
+}
+
+.parallax-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  border: solid gray;
+}
+
+.parallax-between {
+  min-height: 300px;
+  padding: 48px 0;
+}
+
+.signup {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+}
