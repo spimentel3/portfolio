@@ -1,0 +1,35 @@
+@import "../../../../../sass/theme";
+
+#landing_header {
+  margin-top: 42px;
+}
+
+.title-section {
+  height: 100vh;
+}
+
+.white-tint {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.parallax-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  border: solid gray;
+}
+
+.parallax-between {
+  min-height: 300px;
+  //background-color: black;
+  padding: 100px 0;
+}
+
+.signup {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+}

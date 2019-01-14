@@ -1,0 +1,68 @@
+$primarySky_d1      : #82b3c9;
+$primarySky         : #b3e5fc;
+$primarySky_l1      : #e6ffff;
+
+$primaryGrape_d1    : #8992c9;
+$primaryGrape       : #bac2fc;
+$primaryGrape_l1    : #edf5ff;
+
+$secondarySad_d1    : #494949;
+$secondarySad       : #757575;
+$secondarySad_l1    : #a4a4a4;
+
+$secondaryHappy_d1  : #cbb781;
+$secondaryHappy     : #ffe9b1;
+$secondaryHappy_l1  : #ffffe3;
+
+$primaryBlue        : #082843;
+$primaryBlue_d1     : darken($primaryBlue, 5%);
+$primaryBlue_l1     : lighten($primaryBlue, 5%);
+
+$accentBlue         : #009CC2;
+$accentBlue_d1      : darken($accentBlue, 5%);
+$accentBlue_l1      : lighten($accentBlue, 5%);
+
+$blueGreyIsh        : #1C2D3B;
+$blueGreyIsh_d1     : darken($blueGreyIsh, 5%);
+$blueGreyIsh_l1     : lighten($blueGreyIsh, 5%);
+
+$greyGrey           : #222222;
+$greyGrey_d1        : darken($greyGrey, 5%);
+$greyGrey_l1        : lighten($greyGrey, 5%);
+
+.primaryBlue{
+  background-color: $primaryBlue;
+  .lighten-1 {
+    background-color: lighten($primaryBlue, 5%)
+  }
+  .darken-1 {
+    background-color: darken($primaryBlue, 5%)
+  }
+}
+.accentBlue{
+  background-color: $accentBlue;
+  .lighten-1 {
+    background-color: lighten($accentBlue, 5%)
+  }
+  .darken-1 {
+    background-color: darken($accentBlue, 5%)
+  }
+}
+.blueGreyIsh{
+  background-color: $blueGreyIsh;
+  .lighten-1 {
+    background-color: lighten($blueGreyIsh, 5%)
+  }
+  .darken-1 {
+    background-color: darken($blueGreyIsh, 5%)
+  }
+}
+.greyGrey{
+  background-color: $greyGrey;
+  .lighten-1 {
+    background-color: lighten($greyGrey, 5%)
+  }
+  .darken-1 {
+    background-color: darken($greyGrey, 5%)
+  }
+}

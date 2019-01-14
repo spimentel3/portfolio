@@ -1,17 +1,4 @@
-.btn-pill {
-  padding: 10px 22px;
-  text-decoration: none;
-  background-color: #b3e5fc;
-  color: black;
-  text-align: center;
-  letter-spacing: .5px;
-  font-size: 22px;
-  outline: 0;
-  border: none;
-  -webkit-border-radius: 3em;
-  -moz-border-radius: 3em;
-  border-radius: 3em;
-}
+@import "../../../../../sass/theme";
 
 #landing_header {
   margin-top: 42px;
@@ -37,7 +24,8 @@
 
 .parallax-between {
   min-height: 300px;
-  padding: 48px 0;
+  //background-color: black;
+  padding: 100px 0;
 }
 
 .signup {

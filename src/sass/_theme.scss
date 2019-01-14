@@ -1,15 +1,17 @@
-$primarySky_d1 : #82b3c9;
-$primarySky : #b3e5fc;
-$primarySky_l1 : #e6ffff;
+@import "colors";
 
-$primaryGrape_d1 : #8992c9;
-$primaryGrape : #bac2fc;
-$primaryGrape_l1 : #edf5ff;
+.btn-pill {
+  padding: 10px 22px;
+  text-decoration: none;
+  background-color: $primarySky;
+  color: black;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 22px;
+  outline: 0;
+  border: none;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  border-radius: 3em;
+}
 
-$secondarySad_d1 : #494949;
-$secondarySad : #757575;
-$secondarySad_l1 : #a4a4a4;
-
-$secondaryHappy_d1 : #cbb781;
-$secondaryHappy : #ffe9b1;
-$secondaryHappy_l1 : #ffffe3;
