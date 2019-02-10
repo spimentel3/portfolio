@@ -1,5 +1,4 @@
 /* Created by Shane Melton: all credits go to him for this amazing animated background */
-
 @import "../../../../../sass/theme";
 
 ul {
@@ -62,4 +61,16 @@ ul {
   0%   { transform: translateY(-300px); opacity: 0;}
   25%  { opacity: 1; }
   100% { transform: translateY(-1600px) rotate(600deg); }
+}
+
+#login-form-wrapper {
+  height: 100vh;
+}
+
+#login-form-holder {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }

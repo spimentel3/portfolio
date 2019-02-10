@@ -30,6 +30,16 @@ $greyGrey           : #222222;
 $greyGrey_d1        : darken($greyGrey, 5%);
 $greyGrey_l1        : lighten($greyGrey, 5%);
 
+// new colors 1/18/19
+
+$newBlue            : #4fc3f7;
+
+$newAir             : #f5f5f5;
+
+$newCreamcicle      : #ff8f00;
+
+$newHotPing         : #e91e63;
+
 .primaryBlue{
   background-color: $primaryBlue;
   .lighten-1 {

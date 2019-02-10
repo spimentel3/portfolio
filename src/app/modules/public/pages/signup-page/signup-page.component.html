@@ -1,4 +1,8 @@
-<app-login-form-animated></app-login-form-animated>
+<div id="login-form-wrapper">
+  <div id="login-form-holder" [@flyInFormTrigger]="flyInForm ? flyInForm : 'offScreen'">
+    <app-login-form-animated></app-login-form-animated>
+  </div>
+</div>
 <ul>
   <li></li>
   <li></li>
