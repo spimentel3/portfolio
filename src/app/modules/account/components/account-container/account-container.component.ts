@@ -10,6 +10,7 @@ export class AccountContainerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    M.Chips.init(document.querySelectorAll('.chips'), {placeholder: 'Enter tags here'});
   }
 
 }
