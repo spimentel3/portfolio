@@ -31,14 +31,86 @@ $greyGrey_d1        : darken($greyGrey, 5%);
 $greyGrey_l1        : lighten($greyGrey, 5%);
 
 // new colors 1/18/19
-
 $newBlue            : #4fc3f7;
+$newBlue_d1         : darken($newBlue, 5%);
+$newBlue_l1         : lighten($newBlue, 5%);
+
 
 $newAir             : #f5f5f5;
+$newAir_d1          : darken($newAir, 5%);
+$newAir_l1          : lighten($newAir, 5%);
+
 
 $newCreamcicle      : #ff8f00;
+$newCreamcicle_d1   : darken($newCreamcicle, 5%);
+$newCreamcicle_l1   : lighten($newCreamcicle, 5%);
+
 
 $newHotPing         : #e91e63;
+$newHotPing_d1      : darken($newHotPing, 5%);
+$newHotPing_l1      : lighten($newHotPing, 5%);
+
+
+.newBlue {
+  background-color: $newBlue;
+  .lighten-1 {
+    background-color: lighten($newBlue, 5%)
+  }
+  .lighten-2 {
+    background-color: lighten($newBlue, 10%)
+  }
+  .darken-1 {
+    background-color: darken($newBlue, 5%)
+  }
+  .darken-2 {
+    background-color: darken($newBlue, 10%)
+  }
+}
+.newAir {
+  background-color: $newAir;
+  .lighten-1 {
+    background-color: lighten($newAir, 5%)
+  }
+  .lighten-2 {
+    background-color: lighten($newAir, 10%)
+  }
+  .darken-1 {
+    background-color: darken($newAir, 5%)
+  }
+  .darken-2 {
+    background-color: darken($newAir, 10%)
+  }
+}
+.newCreamcicle {
+  background-color: $newCreamcicle;
+  .lighten-1 {
+    background-color: lighten($newCreamcicle, 5%)
+  }
+  .lighten-2 {
+    background-color: lighten($newCreamcicle, 10%)
+  }
+  .darken-1 {
+    background-color: darken($newCreamcicle, 5%)
+  }
+  .darken-2 {
+    background-color: darken($newCreamcicle, 10%)
+  }
+}
+.newHotPing {
+  background-color: $newHotPing;
+  .lighten-1 {
+    background-color: lighten($newHotPing, 5%)
+  }
+  .lighten-2 {
+    background-color: lighten($newHotPing, 10%)
+  }
+  .darken-1 {
+    background-color: darken($newHotPing, 5%)
+  }
+  .darken-2 {
+    background-color: darken($newHotPing, 10%)
+  }
+}
 
 .primaryBlue{
   background-color: $primaryBlue;
