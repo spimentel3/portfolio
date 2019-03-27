@@ -3,26 +3,57 @@
     <ngx-masonry #masonry [options]="masonryOptions" style="margin: 0 auto" [useImagesLoaded]="true">
       <ngxMasonryItem *ngFor="let item of placeholderProjects">
         <div class="project-card">
-          <div class="card">
+          <div class="card horizontal">
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>{{item.desc}}</p>
+              </div>
+              <div class="card-action">
+                <h5>{{item.projectName}}</h5>
+              </div>
+            </div>
             <div class="card-image">
               <img src="{{item.img}}">
-              <span class="card-title">{{item.projectName}}</span>
             </div>
-            <div class="card-content">
-              <p>
-                {{item.desc}}
-              </p>
-            </div>
-            <!--<div class="card-action">-->
-              <!--<a href="#">This is a link</a>-->
-            <!--</div>-->
           </div>
         </div>
-        <!--<div class="project-card">-->
-          <!--<img src="{{item.img}}" alt="project image"/>-->
-          <!--{{item.projectName}}-->
-        <!--</div>-->
       </ngxMasonryItem>
     </ngx-masonry>
   </div>
 </div>
+
+<!--View 1-->
+<!--<div class="project-card">-->
+  <!--<div class="card">-->
+    <!--<div class="card-image">-->
+      <!--<img src="{{item.img}}">-->
+      <!--<span class="card-title">{{item.projectName}}</span>-->
+    <!--</div>-->
+    <!--<div class="card-content">-->
+      <!--<p>-->
+        <!--{{item.desc}}-->
+      <!--</p>-->
+    <!--</div>-->
+    <!--<div class="card-action">-->
+      <!--<a href="#">View</a>-->
+      <!--<a href="#">Edit</a>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!--View 2-->
+<!--<div class="project-card">-->
+  <!--<div class="card horizontal">-->
+    <!--<div class="card-stacked">-->
+      <!--<div class="card-content">-->
+        <!--<p>{{item.desc}}</p>-->
+      <!--</div>-->
+      <!--<div class="card-action">-->
+        <!--<h5>{{item.projectName}}</h5>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="card-image">-->
+      <!--<img src="{{item.img}}">-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

@@ -18,7 +18,7 @@ export class ProjectsPageComponent implements OnInit {
     horizontalOrder: true
   };
 
-  getRandomKittenUrl = () => `https://placekitten.com/${Math.round(Math.random() * 100 + 300)}/${Math.round(Math.random() * 100 + 300)}`
+  getRandomKittenUrl = () => `https://placekitten.com/${Math.round(Math.random() * 1000 + 300)}/${Math.round(Math.random() * 1000 + 300)}`;
 
   placeholderProjects = [
     {projectName: 'Portfolio 1', img: this.getRandomKittenUrl(), color: '#ff8f00', desc: 'Tempor fusce natoque platea ultrices, vivamus orci ipsum lacinia at orci ipsum lacinia orci ipsum lacinia'},
