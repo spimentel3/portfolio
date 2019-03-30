@@ -1,26 +1,42 @@
 <div class="container">
   <div id="projects-container">
-    <ngx-masonry #masonry [options]="masonryOptions" style="margin: 0 auto" [useImagesLoaded]="true">
-      <ngxMasonryItem *ngFor="let item of placeholderProjects">
-        <div class="project-card">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>{{item.desc}}</p>
-              </div>
-              <div class="card-action">
-                <h5>{{item.projectName}}</h5>
-              </div>
-            </div>
-            <div class="card-image">
-              <img src="{{item.img}}">
+    <div id="project-grid">
+
+    </div>
+  </div>
+  <div id="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item" *ngFor="let item of projects">
+      <div class="project-card m-auto">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{item.img}}">
+            <span class="card-title project-name">{{item.projectName}}</span>
+          </div>
+          <div class="card-content">
+            <p>
+              {{item.desc}}
+            </p>
+            <h6>Tags</h6>
+            <div class="tag-wrapper" [attr.search-tag]="item.tags">
+              <span *ngFor="let tag of item.tags">
+                <div class="chip search-tag-value-{{tag}}">
+                  {{tag}}
+                </div>
+              </span>
             </div>
           </div>
+          <div class="card-action">
+            <a href="#">View</a>
+            <a href="#">Edit</a>
+            <p class="right m-0 search-date" [attr.search-date]="item.date" style="line-height: 22.5px;">{{toDate(item.date).toDateString()}}</p>
+          </div>
         </div>
-      </ngxMasonryItem>
-    </ngx-masonry>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <!--View 1-->
 <!--<div class="project-card">-->
