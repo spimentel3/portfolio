@@ -1,0 +1,18 @@
+<button
+  class="btn waves-effect waves-light"
+  [ngClass]="classes"
+  (click)="clickedButton()"
+  (blur)="clearSort()">
+  {{text}}
+  <ng-container [ngSwitch]="sortAscending">
+    <ng-container *ngSwitchCase="true">
+      <i class="material-icons right">keyboard_arrow_down</i>
+    </ng-container>
+    <ng-container *ngSwitchCase="false">
+      <i class="material-icons right">keyboard_arrow_up</i>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <i class="material-icons"></i>
+    </ng-container>
+  </ng-container>
+</button>

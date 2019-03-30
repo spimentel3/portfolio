@@ -1,4 +1,3 @@
-<button class="btn waves-effect waves-light" (click)="shuffle()">Shuffle</button>
 <div class="container">
   <div id="projects-container">
     <div id="project-grid">
@@ -12,16 +11,25 @@
         <div class="card">
           <div class="card-image">
             <img src="{{item.img}}">
-            <span class="card-title">{{item.projectName}}</span>
+            <span class="card-title project-name">{{item.projectName}}</span>
           </div>
           <div class="card-content">
             <p>
               {{item.desc}}
             </p>
+            <h6>Tags</h6>
+            <div class="tag-wrapper" [attr.search-tag]="item.tags">
+              <span *ngFor="let tag of item.tags">
+                <div class="chip search-tag-value-{{tag}}">
+                  {{tag}}
+                </div>
+              </span>
+            </div>
           </div>
           <div class="card-action">
             <a href="#">View</a>
             <a href="#">Edit</a>
+            <p class="right m-0 search-date" [attr.search-date]="item.date" style="line-height: 22.5px;">{{toDate(item.date).toDateString()}}</p>
           </div>
         </div>
       </div>

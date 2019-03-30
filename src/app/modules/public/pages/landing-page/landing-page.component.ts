@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Parallax } from 'materialize-css';
 
 @Component({
-  selector: 'app-landing-page',
+  selector: 'pio-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })

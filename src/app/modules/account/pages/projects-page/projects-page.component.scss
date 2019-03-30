@@ -40,3 +40,7 @@
   display: block;
   max-width: 100%;
 }
+
+.chip.highlight {
+  background-color: $accent-color;
+}

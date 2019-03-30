@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-announcement',
+  selector: 'pio-announcement',
   templateUrl: './announcement.component.html',
   styleUrls: ['./announcement.component.scss']
 })
