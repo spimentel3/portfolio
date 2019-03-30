@@ -16,3 +16,57 @@
   border-radius: 3em;
 }
 
+$incrementals: '0', '2', '4', '5', '8', '10', '15', '16',
+                '20', '25', '30', '32', '35', '40', '45',
+                '50', '55', '60', '64', '65', '70', '75',
+                '80', '85', '90', '95', '100';
+
+@each $increment in $incrementals {
+  .m-#{$increment} {
+    margin: #{$increment}px;
+  }
+  .mx-#{$increment} {
+    margin: 0 #{$increment}px;
+  }
+  .my-#{$increment} {
+    margin: #{$increment}px 0;
+  }
+  .mt-#{$increment} {
+    margin-top: #{$increment}px;
+  }
+  .mr-#{$increment} {
+    margin-right: #{$increment}px;
+  }
+  .mb-#{$increment} {
+    margin-bottom: #{$increment}px;
+  }
+  .ml-#{$increment} {
+    margin-left: #{$increment}px;
+  }
+
+  .p-#{$increment} {
+    padding: #{$increment}px;
+  }
+  .px-#{$increment} {
+    padding: 0 #{$increment}px;
+  }
+  .py-#{$increment} {
+    padding: #{$increment}px 0;
+  }
+  .pt-#{$increment} {
+    padding-top: #{$increment}px;
+  }
+  .pr-#{$increment} {
+    padding-right: #{$increment}px;
+  }
+  .pb-#{$increment} {
+    padding-bottom: #{$increment}px;
+  }
+  .pl-#{$increment} {
+    padding-left: #{$increment}px;
+  }
+}
+
+.m-auto {
+  margin: 0 auto;
+}

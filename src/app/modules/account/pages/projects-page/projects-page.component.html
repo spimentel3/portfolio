@@ -1,26 +1,34 @@
+<button class="btn waves-effect waves-light" (click)="shuffle()">Shuffle</button>
 <div class="container">
   <div id="projects-container">
-    <ngx-masonry #masonry [options]="masonryOptions" style="margin: 0 auto" [useImagesLoaded]="true">
-      <ngxMasonryItem *ngFor="let item of placeholderProjects">
-        <div class="project-card">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>{{item.desc}}</p>
-              </div>
-              <div class="card-action">
-                <h5>{{item.projectName}}</h5>
-              </div>
-            </div>
-            <div class="card-image">
-              <img src="{{item.img}}">
-            </div>
+    <div id="project-grid">
+
+    </div>
+  </div>
+  <div id="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item" *ngFor="let item of projects">
+      <div class="project-card m-auto">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{item.img}}">
+            <span class="card-title">{{item.projectName}}</span>
+          </div>
+          <div class="card-content">
+            <p>
+              {{item.desc}}
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">View</a>
+            <a href="#">Edit</a>
           </div>
         </div>
-      </ngxMasonryItem>
-    </ngx-masonry>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <!--View 1-->
 <!--<div class="project-card">-->
