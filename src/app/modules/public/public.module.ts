@@ -5,6 +5,7 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { LoginFormAnimatedComponent } from './components/login-form-animated/login-form-animated.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { PublicWrapperComponent } from './components/public-wrapper/public-wrapper.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AnnouncementComponent } from './pages/announcement/announcement.compone
     AnnouncementComponent,
     LandingPageComponent,
     SignupPageComponent,
-    LoginFormAnimatedComponent
+    LoginFormAnimatedComponent,
+    PublicWrapperComponent
   ]
 })
 export class PublicModule { }
