@@ -37,12 +37,12 @@ ul {
     -o-transition-timing-function: linear;
     transition-timing-function: linear;
 
-    @for $item from 1 through 40 {
+    @for $item from 1 through 60 {
       $size: random(140) + 20;
       &:nth-child(#{$item}) {
         animation-delay: #{random(20)}s;
         animation-duration: #{random(25)+20}s;
-        left: percentage((random(98)) / 100);
+        left: percentage((random(96)) / 100);
         width: #{$size}px;
         height: #{$size}px;
         background-color: fade_out(white, ((random(4) + 5)) / 10.0);

@@ -13,6 +13,9 @@ export class SortButtonComponent implements OnInit {
   @Input()
   classes: string;
 
+  @Input()
+  flip = false;
+
   @Output()
   clicked: EventEmitter<boolean> = new EventEmitter();
 
@@ -34,7 +37,17 @@ export class SortButtonComponent implements OnInit {
   }
 
   toggleAscending() {
-    this.sortAscending = !this.sortAscending;
+    switch (this.sortAscending) {
+      case null:
+        this.sortAscending = true;
+        break;
+      case true:
+        this.sortAscending = false;
+        break;
+      case false:
+        this.sortAscending = null;
+        break;
+    }
   }
 
 }

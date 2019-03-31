@@ -1,8 +1,8 @@
 <button
   class="btn waves-effect waves-light"
   [ngClass]="classes"
-  (click)="clickedButton()"
-  (blur)="clearSort()">
+  (click)="clickedButton()">
+<!--  (blur)="clearSort()"-->
   {{text}}
   <ng-container [ngSwitch]="sortAscending">
     <ng-container *ngSwitchCase="true">
