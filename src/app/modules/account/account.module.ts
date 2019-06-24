@@ -4,6 +4,8 @@ import { AccountRoutingModule } from './account-routing.module';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { AccountContainerComponent } from './components/account-container/account-container.component';
 import { SharedModule } from '../../shared/shared.module';
+import { ProjectEditorComponent } from './pages/project-editor/project-editor.component';
+import { ProjectViewComponent } from './pages/project-view/project-view.component';
 
 @NgModule({
   imports: [
@@ -11,6 +13,6 @@ import { SharedModule } from '../../shared/shared.module';
     AccountRoutingModule,
     SharedModule,
   ],
-  declarations: [ProjectsPageComponent, AccountContainerComponent]
+  declarations: [ProjectsPageComponent, AccountContainerComponent, ProjectEditorComponent, ProjectViewComponent]
 })
 export class AccountModule { }

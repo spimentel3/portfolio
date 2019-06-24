@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IUser, userPlaceholder } from '../../../../placeholderModels/user';
-import Chips = M.Chips;
 import { ProjectsPageComponent } from '../../pages/projects-page/projects-page.component';
 
 @Component({

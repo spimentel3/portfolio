@@ -182,7 +182,7 @@ animate('0.9s ease-in-out', keyframes([
 
         query('#special-button', [
           style({opacity: '1.0'}),
-          animate('1s', style({opacity: '0.0'}))
+          animate('0.2s', style({opacity: '0.0'}))
         ]),
         query('#login-wrapper', [
           animate('0.8s ease-in-out', style({

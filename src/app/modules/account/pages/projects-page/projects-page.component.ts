@@ -5,7 +5,6 @@ import * as imagesloaded from 'imagesloaded';
 import * as moment from 'moment';
 import { IProjects, placeholderProjects } from '../../../../placeholderModels/project';
 import { Moment } from 'moment';
-import { v } from '@angular/core/src/render3';
 
 
 @Component({
@@ -30,9 +29,10 @@ export class ProjectsPageComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const isotopeOptions: IsotopeOptions = {
       itemSelector: '.grid-item'
-      , percentPosition: true
       , masonry: {
-        columnWidth: '.grid-sizer'
+        columnWidth: 300
+        , gutter: 35
+        , fitWidth: true
       }
       , getSortData: {
         name: '.project-name',
@@ -81,7 +81,9 @@ export class ProjectsPageComponent implements OnInit, AfterViewInit {
   }
 
   public sortBy(key: string, sortAscending: boolean) {
-    this.iso.arrange({sortBy: key, sortAscending});
+    if (sortAscending !== null) {
+      this.iso.arrange({sortBy: key, sortAscending});
+    }
   }
 
   public showAll() {

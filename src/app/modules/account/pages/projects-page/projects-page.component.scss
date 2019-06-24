@@ -12,6 +12,10 @@
   font-weight: 700;
 }
 
+#grid {
+  margin: 0 auto;
+}
+
 // Isotope
 
 .grid {
@@ -29,7 +33,7 @@
 
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: 300px;
 }
 
 .grid-item {
@@ -43,4 +47,9 @@
 
 .chip.highlight {
   background-color: $accent-color;
+}
+
+#search {
+  height: 64px;
+  background-color: $newAir_d1;
 }
